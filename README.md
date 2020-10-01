@@ -14,18 +14,18 @@ https://developers.google.com/youtube/v3/docs/videos/list
 
 First, I bring the data of trending videos.
 
-The base url is
-https://www.googleapis.com/youtube/v3/videos
+The base url is <br />
+https://www.googleapis.com/youtube/v3/videos<br />
 and I can add some attributes.
 
-For example, to fetch 12 most popular videos, use
+For example, to fetch 12 most popular videos, use<br />
 https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=[YOUR_API_Key]
 
 # 3. VideoCard
 
 I made VideoCard component to display several videos by using just one component.
 
-From RecommendedVideos.js, I sent props to VideoCard.js. For example, VideoCard.js got props such as id, thumbnail, title, publishedAt, channelTitle.
+From `RecommendedVideos.js`, I sent props to `VideoCard.js`. For example, `VideoCard.js` got props such as id, thumbnail, title, publishedAt, channelTitle.
 
 It makes much easier to make the application by avoiding repetitive works.
 
