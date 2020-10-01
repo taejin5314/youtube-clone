@@ -32,3 +32,18 @@ It makes much easier to make the application by avoiding repetitive works.
 ![homepage](https://user-images.githubusercontent.com/21342802/94870680-2ca90c80-0416-11eb-964f-11a1e8eece19.png)
 
 This is the screenshot of my project's home page.
+
+## 4. npm react-router-dom
+
+## 5. Firebase deploy
+
+I used firebase to deploy my app.
+
+`npm install -g firebase-tools`: Install firebase.
+`firebase init`: Initiate firebase, and I used my existing project for hosting.
+`npm run build`: Build my app before deployment.
+`firebase deploy`: Start deployment. If succeed, it will show the address of your application.
+
+Below link is my app's address. Check what I have done.
+
+https://clone-8e3ce.web.app/
