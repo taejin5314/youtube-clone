@@ -39,9 +39,9 @@ This is the screenshot of my project's home page.
 
 I used firebase to deploy my app.
 
-`npm install -g firebase-tools`: Install firebase.
-`firebase init`: Initiate firebase, and I used my existing project for hosting.
-`npm run build`: Build my app before deployment.
+`npm install -g firebase-tools`: Install firebase.<br />
+`firebase init`: Initiate firebase, and I used my existing project for hosting.<br />
+`npm run build`: Build my app before deployment.<br />
 `firebase deploy`: Start deployment. If succeed, it will show the address of your application.
 
 Below link is my app's address. Check what I have done.
