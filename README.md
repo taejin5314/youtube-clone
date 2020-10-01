@@ -2,19 +2,19 @@
 
 This project is clone coding of Youtube by using Youtube API and deployed by using Firebase.
 
-# 1. npx create-react-app
+# 1. `npx create-react-app`
 
 I used the line of code to initiate my project.
 
 # 2. Axios
 
-By using Axios, I can fetch the data of videos from Youtube API.
+By using `Axios`, I can fetch the data of videos from Youtube API.
 
 https://developers.google.com/youtube/v3/docs/videos/list
 
 First, I bring the data of trending videos.
 
-The base url is "https://www.googleapis.com/youtube/v3/videos", and I can add some attributes. For example, to fetch 12 most popular videos, use "https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=[API Key that you have]".
+The base url is [YoutubeAPI]https://www.googleapis.com/youtube/v3/videos, and I can add some attributes. For example, to fetch 12 most popular videos, use https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=[API_Key].
 
 # 3. VideoCard
 
