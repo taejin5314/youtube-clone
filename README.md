@@ -2,9 +2,9 @@
 
 This project is clone coding of Youtube by using Youtube API and deployed by using Firebase.
 
-# 1. `npx create-react-app`
+# 1. npx create-react-app
 
-I used the line of code to initiate my project.
+I used `npx create-react-app` to initiate my project.
 
 # 2. Axios
 
