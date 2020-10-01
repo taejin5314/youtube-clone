@@ -5,8 +5,16 @@
 }
 
 .sidebarRow:hover {
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
     cursor: pointer;
+}
+
+.sidebarRow:hover>.sidebarRow__icon {
+    color: red;
+}
+
+.sidebarRow:hover>.sidebarRow__title {
+    font-weight: bold;
 }
 
 .sidebarRow__icon {
@@ -19,4 +27,16 @@
     margin-left: 20px;
     font-size: 12px;
     font-weight: 500;
+}
+
+.sidebarRow.selected {
+    background-color: rgb(228, 228, 228);
+}
+
+.sidebarRow.selected>.sidebarRow__icon {
+    color: red;
+}
+
+.sidebarRow.selected>.sidebarRow__title {
+    font-weight: bold;
 }

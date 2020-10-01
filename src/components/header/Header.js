@@ -20,15 +20,15 @@ function Header() {
             </div>
 
             <div className="header__input">
-                <input type="text" />
-                <SearchIcon className="header__inputButton" />
+                <input type="text" placeholder="Search" />
+                <SearchIcon className="header__inputButton" style={{ fontSize: "20px" }} />
             </div>
 
             <div className="header__icons">
                 <VideoCallIcon className="header__icon" />
                 <AppsIcon className="header__icon" />
                 <NotificationsIcon className="header__icon" />
-                <Avatar />
+                <Avatar style={{ width: "30px", height: "30px" }} />
             </div>
         </div>
     )
