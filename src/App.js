@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header/Header';
+import RecommendedVideos from './components/recommendedVideos/RecommendedVideos';
 import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         {/* Sidebar */}
         <Sidebar />
         {/* RecommendedVideos */}
-
+        <RecommendedVideos />
       </div>
     </div>
   );
