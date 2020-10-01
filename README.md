@@ -14,7 +14,12 @@ https://developers.google.com/youtube/v3/docs/videos/list
 
 First, I bring the data of trending videos.
 
-The base url is [YoutubeAPI]https://www.googleapis.com/youtube/v3/videos, and I can add some attributes. For example, to fetch 12 most popular videos, use https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=[API_Key].
+The base url is
+https://www.googleapis.com/youtube/v3/videos
+and I can add some attributes.
+
+For example, to fetch 12 most popular videos, use
+https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=[YOUR_API_Key]
 
 # 3. VideoCard
 
