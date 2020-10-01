@@ -1,12 +1,12 @@
-# youtube-clone
+# Youtube-clone
 
 This project is clone coding of Youtube by using Youtube API and deployed by using Firebase.
 
-# 1. npx create-react-app
+## 1. npx create-react-app
 
 I used `npx create-react-app` to initiate my project.
 
-# 2. Axios
+## 2. Axios
 
 By using `Axios`, I can fetch the data of videos from Youtube API.
 
@@ -21,7 +21,7 @@ and I can add some attributes.
 For example, to fetch 12 most popular videos, use<br />
 https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=[YOUR_API_Key]
 
-# 3. VideoCard
+## 3. VideoCard
 
 I made VideoCard component to display several videos by using just one component.
 
