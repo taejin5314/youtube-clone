@@ -35,6 +35,10 @@ This is the screenshot of my project's home page.
 
 ## 4. npm react-router-dom
 
+`npm install react-router-dom`: Install react-router-dom.<br />
+
+I used react-router-dom so that users can use search input to find the videos that they want to watch. I made new page with header component and others.
+
 ## 5. Firebase deploy
 
 I used firebase to deploy my app.
