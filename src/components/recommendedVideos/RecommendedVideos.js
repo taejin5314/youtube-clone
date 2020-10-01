@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Video from '../video/Video';
+import VideoCard from '../videoCard/VideoCard';
 import axios from '../../axios';
 import request from '../../request';
 import './RecommendedVideos.css';
@@ -29,7 +29,7 @@ function RecommendedVideos() {
                     // console.log(video.snippet.localized.title);
                     // console.log(video.snippet.publishedAt);
                     // console.log(video.snippet.channelTitle);
-                    <Video key={video.id} id={video.id} thumbnail={video.snippet.thumbnails.standard} title={video.snippet.localized.title} publishedAt={video.snippet.publishedAt} channelTitle={video.snippet.channelTitle} />
+                    <VideoCard key={video.id} id={video.id} thumbnail={video.snippet.thumbnails.medium} title={video.snippet.localized.title} publishedAt={video.snippet.publishedAt} channelTitle={video.snippet.channelTitle} />
                 ))}
 
 
