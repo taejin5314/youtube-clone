@@ -9,6 +9,8 @@ import { Avatar } from '@material-ui/core';
 function Video({ id, thumbnail, title, publishedAt, channelTitle }) {
     const [Views, setViews] = useState(0);
 
+    const maxlimit = 60;
+
     useEffect(() => {
         async function fetchStatistics() {
             const fetchData = await axios.get(request.fetchStatistics + `&id=${id}`)
@@ -30,7 +32,9 @@ function Video({ id, thumbnail, title, publishedAt, channelTitle }) {
                     src=""
                 />
                 <div className="videoCard__text">
-                    <h4>{title}</h4>
+                    <h4>{((title).length > maxlimit) ?
+                        (((title).substring(0, maxlimit - 3)) + '...') :
+                        title}</h4>
                     <p>{channelTitle}</p>
                     <p><NumberFormat value={Views} displayType={'text'} thousandSeparator={true} /> Views • <Moment fromNow ago>{publishedAt}</Moment> ago</p>
                 </div>
