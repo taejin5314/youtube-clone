@@ -9,15 +9,13 @@ function App() {
   return (
     <div className="app">
       <Router>
+        {/* Header */}
+        <Header />
         <Switch>
-          <Route path="/search">
-            {/* Header */}
-            <Header />
+          <Route path="/search/:searchTerm">
             <h1>Search Page</h1>
           </Route>
           <Route exact path="/">
-            {/* Header */}
-            <Header />
             <div className="app__page">
               {/* Sidebar */}
               <Sidebar />

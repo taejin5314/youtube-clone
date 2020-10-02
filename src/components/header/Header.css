@@ -30,6 +30,10 @@
   outline: none;
 }
 
+.header__input>a {
+  margin-bottom: -4px;
+}
+
 .header__inputButton {
   width: 50px !important;
   background-color: #fafafa;
