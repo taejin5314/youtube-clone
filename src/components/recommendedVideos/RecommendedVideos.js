@@ -18,7 +18,7 @@ function RecommendedVideos() {
         fetchData();
     }, [])
 
-    console.log(MostPopularVideos);
+    // console.log(MostPopularVideos);
 
     return (
         <div className="recommendedVideos">

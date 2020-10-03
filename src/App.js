@@ -13,7 +13,7 @@ function App() {
         {/* Header */}
         <Header />
         <Switch>
-          <Route path="/search/:searchTerm">
+          <Route path="/search/:searchTerm" children={<SearchPage />}>
             <div className="app__page">
               {/* Sidebar */}
               <Sidebar />
