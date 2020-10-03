@@ -17,10 +17,12 @@ function ChannelRow({
                 <h4>{channel}</h4>
                 <p>
                     <NumberFormat value={subs} displayType={'text'} thousandSeparator={true} /> subscribers • {noOfVideos} videos
-            </p>
-                <p>{((description).length > 132) ?
-                    (((description).substring(0, 132 - 3)) + '...') :
-                    description}</p>
+                </p>
+                <p>
+                    {((description).length > 132) ?
+                        (((description).substring(0, 132 - 3)) + '...') :
+                        description}
+                </p>
             </div>
         </div>
     )

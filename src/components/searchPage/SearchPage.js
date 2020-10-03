@@ -15,6 +15,7 @@ function SearchPage() {
     const [ChannelSubs, setChannelSubs] = useState(0);
     const [ChannelNoOfVideos, setChannelNoOfVideos] = useState(0);
     const [ChannelDescription, setChannelDescription] = useState('');
+    const [VideoIds, setVideoIds] = useState([]);
 
     useEffect(() => {
         async function searchChannel() {
@@ -35,7 +36,14 @@ function SearchPage() {
                     setChannelNoOfVideos(data.videoCount);
                 })
         }
-        searchChannel();
+        searchChannel()
+            .then(() => {
+                const fetch = axios.get(request.fetchSearchVideo + `&q=${param.searchTerm}`)
+                    .then((res) => {
+                        // console.log(res.data.items);
+                        setVideoIds(res.data.items);
+                    })
+            })
     }, [param.searchTerm])
 
     return (
@@ -56,7 +64,9 @@ function SearchPage() {
                 />
                 <hr />
 
-                <VideoRow />
+                {VideoIds.map((video) => (
+                    <VideoRow key={video.etag} videoId={video.id.videoId} />
+                ))}
             </div>
         </div>
     )
