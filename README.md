@@ -39,7 +39,15 @@ This is the screenshot of my project's home page.
 
 I used react-router-dom so that users can use search input to find the videos that they want to watch. I made new page with header component and others.
 
-## 5. Firebase deploy
+## 5. SearchPage
+
+For the search page, I used React Router in `App.js`. When the user types something in the input box of header and click the search button, the link will be changed to `/search/:searchTerm`. In search page, I used the link parameter and youtube API to show the relevant channel and videos.
+
+Below is the screenshot of Search Page.
+
+![searchpage](https://user-images.githubusercontent.com/21342802/95028920-19927880-0672-11eb-8eda-399a0bbc9f67.png)
+
+## 6. Firebase deploy
 
 I used firebase to deploy my app.
 
