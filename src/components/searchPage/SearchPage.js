@@ -16,6 +16,7 @@ function SearchPage() {
     const [ChannelNoOfVideos, setChannelNoOfVideos] = useState(0);
     const [ChannelDescription, setChannelDescription] = useState('');
     const [VideoIds, setVideoIds] = useState([]);
+    const [ChannelId, setChannelId] = useState('')
 
     useEffect(() => {
         async function searchChannel() {
@@ -27,6 +28,7 @@ function SearchPage() {
                     setChannelImage(data.thumbnails.medium.url);
                     setChannelTitle(data.channelTitle);
                     setChannelDescription(data.description);
+                    setChannelId(data.channelId);
                     return axios.get(request.fetchChannelStatistics + `&id=${res.data.items[0].id.channelId}`)
                 })
                 .then((res) => {
@@ -56,6 +58,7 @@ function SearchPage() {
                 <hr />
 
                 <ChannelRow
+                    channelId={ChannelId}
                     image={ChannelImage}
                     channel={ChannelTitle}
                     subs={ChannelSubs}

@@ -7,6 +7,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { Avatar } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import logo from '../../YouTube_Logo_2017.svg'
 
 function Header() {
     const [InputSearch, setInputSearch] = useState('');
@@ -18,7 +19,7 @@ function Header() {
                 <Link to='/'>
                     <img
                         className="header__logo"
-                        src="../../YouTube_Logo_2017.svg"
+                        src={logo}
                         alt=""
                     />
                 </Link>

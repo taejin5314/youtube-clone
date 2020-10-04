@@ -4,6 +4,7 @@ import axios from '../../axios';
 import request from '../../request';
 import NumberFormat from 'react-number-format';
 import Moment from 'react-moment';
+import { Link } from 'react-router-dom';
 
 function VideoRow({ videoId }) {
     // publishedAt, viewCount, title, channelTitle, description, thumbnail
@@ -32,20 +33,22 @@ function VideoRow({ videoId }) {
     }, [videoId])
 
     return (
-        <div className="videoRow">
-            <img src={Thumbnail} alt="" />
-            <div className="videoRow__text">
-                <h3 className="videoRow__title">{Title}</h3>
-                <p className="videoRow__subTitle">
-                    {ChannelTitle} • <NumberFormat value={ViewCount} displayType={'text'} thousandSeparator={true} /> Views • <Moment fromNow ago>{PublishedAt}</Moment> ago
+        <a href={`https://www.youtube.com/watch?v=${videoId}`} style={{ textDecoration: "none" }}>
+            <div className="videoRow">
+                <img src={Thumbnail} alt="" />
+                <div className="videoRow__text">
+                    <h3 className="videoRow__title">{Title}</h3>
+                    <p className="videoRow__subTitle">
+                        {ChannelTitle} • <NumberFormat value={ViewCount} displayType={'text'} thousandSeparator={true} /> Views • <Moment fromNow ago>{PublishedAt}</Moment> ago
                 </p>
-                <p className="videoRow__description">
-                    {((Description).length > 125) ?
-                        (((Description).substring(0, 125 - 3)) + '...') :
-                        Description}
-                </p>
+                    <p className="videoRow__description">
+                        {((Description).length > 125) ?
+                            (((Description).substring(0, 125 - 3)) + '...') :
+                            Description}
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
     )
 }
 

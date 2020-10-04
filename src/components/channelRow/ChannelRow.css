@@ -6,6 +6,7 @@
 .channelRow__text {
     display: flex;
     flex-direction: column;
+    padding-right: 50px;
 }
 
 .channelRow__text>p {
@@ -19,10 +20,24 @@
     justify-content: space-between;
     font-weight: 600;
     font-size: 18px;
+    color: black;
 }
 
 .channelRow__logo {
     height: 140px !important;
     width: 140px !important;
     margin: 10px 60px;
+}
+
+.channelRow__subsBtn {
+    margin-right: 10px;
+    width: 110px;
+    height: 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: red;
+    outline: none;
+    cursor: pointer;
 }

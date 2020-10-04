@@ -15,7 +15,7 @@ function Video({ id, thumbnail, title, publishedAt, channelTitle }) {
         async function fetchStatistics() {
             const fetchData = await axios.get(request.fetchStatistics + `&id=${id}`)
                 .then(req => {
-                    console.log(req);
+                    // console.log(req);
                     setViews(req.data.items[0].statistics.viewCount);
                 })
         }
@@ -23,23 +23,25 @@ function Video({ id, thumbnail, title, publishedAt, channelTitle }) {
     }, [id])
 
     return (
-        <div className="videoCard">
-            <img className="videoCard__img" src={thumbnail.url} alt="" />
-            <div className="videoCard__info">
-                <Avatar
-                    className="videoCard__avatar"
-                    alt={channelTitle}
-                    src=""
-                />
-                <div className="videoCard__text">
-                    <h4>{((title).length > maxlimit) ?
-                        (((title).substring(0, maxlimit - 3)) + '...') :
-                        title}</h4>
-                    <p>{channelTitle}</p>
-                    <p><NumberFormat value={Views} displayType={'text'} thousandSeparator={true} /> Views • <Moment fromNow ago>{publishedAt}</Moment> ago</p>
+        <a href={`https://www.youtube.com/watch?v=${id}`} style={{ textDecoration: "none" }}>
+            <div className="videoCard">
+                <img className="videoCard__img" src={thumbnail.url} alt="" />
+                <div className="videoCard__info">
+                    <Avatar
+                        className="videoCard__avatar"
+                        alt={channelTitle}
+                        src=""
+                    />
+                    <div className="videoCard__text">
+                        <h4>{((title).length > maxlimit) ?
+                            (((title).substring(0, maxlimit - 3)) + '...') :
+                            title}</h4>
+                        <p>{channelTitle}</p>
+                        <p><NumberFormat value={Views} displayType={'text'} thousandSeparator={true} /> Views • <Moment fromNow ago>{publishedAt}</Moment> ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 
