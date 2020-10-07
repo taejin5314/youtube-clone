@@ -9,8 +9,11 @@ import { Avatar, IconButton } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import logo from '../../YouTube_Logo_2017.svg';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import { useStateValue } from '../../StateProvider';
 
 function Header() {
+    const [{ showSidebar }, dispatch] = useStateValue();
+
     const [InputSearch, setInputSearch] = useState('');
     const [SearchBtnClicked, setSearchBtnClicked] = useState(false);
 
@@ -21,6 +24,13 @@ function Header() {
     const onClickSearch = () => {
         setInputSearch('');
         setSearchBtnClicked(false);
+    }
+
+    const toggleSidebar = () => {
+        dispatch({
+            type: "TOGGLE_SIDEBAR",
+        })
+        console.log(showSidebar)
     }
 
     return (
@@ -46,7 +56,7 @@ function Header() {
                 :
                 <div className="header">
                     <div className="header__left">
-                        <IconButton className="header__icon" style={{ marginBottom: "6px" }}>
+                        <IconButton className="header__icon" style={{ marginBottom: "6px" }} onClick={toggleSidebar} >
                             <MenuIcon />
                         </IconButton>
                         <Link to='/'>

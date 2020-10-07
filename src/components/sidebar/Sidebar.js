@@ -10,8 +10,11 @@ import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
 import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { useStateValue } from '../../StateProvider';
 
 function Sidebar() {
+    const [{ showSidebar }, dispatch] = useStateValue();
+
     return (
         <div className="sidebar">
             <SidebarRow title='Home' Icon={HomeIcon} selected />
