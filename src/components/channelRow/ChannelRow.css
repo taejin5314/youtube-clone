@@ -41,3 +41,15 @@
     outline: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 810px) {
+    .channelRow__subsContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .channelRow__text>p:last-child {
+        display: none;
+    }
+}

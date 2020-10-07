@@ -5,7 +5,7 @@
 }
 
 .searchPage__container {
-    width: 69%;
+    max-width: 860px;
 }
 
 .searchPage__filter {
@@ -25,4 +25,16 @@
     background-color: lightgray;
     margin-top: 8px;
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1315px) and (min-width: 811px) {
+    .searchPage {
+        flex: 0.93;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .searchPage {
+        flex: 1;
+    }
 }

@@ -1,11 +1,10 @@
 .videoCard {
     margin-bottom: 40px;
-    width: 270px;
+    width: 275px;
 }
 
 .videoCard__img {
-    height: 140px;
-    width: 250px;
+    width: 90%;
 }
 
 .videoCard__info {

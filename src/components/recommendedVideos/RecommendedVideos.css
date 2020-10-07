@@ -14,3 +14,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1315px) and (min-width: 811px) {
+    .recommendedVideos {
+        flex: 0.93;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .recommendedVideos {
+        flex: 1;
+    }
+}

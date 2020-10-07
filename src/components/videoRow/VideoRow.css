@@ -1,7 +1,6 @@
 .videoRow {
     display: flex;
     margin-bottom: 18px;
-    max-width: 700px;
 }
 
 .videoRow>img {
@@ -29,4 +28,10 @@
     margin-top: 20px;
     font-size: 12px;
     color: #606060;
+}
+
+@media screen and (max-width: 550px) {
+    .videoRow__description {
+        display: none;
+    }
 }

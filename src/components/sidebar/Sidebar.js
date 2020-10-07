@@ -19,12 +19,14 @@ function Sidebar() {
             <SidebarRow title='Subscription' Icon={SubscriptionsIcon} />
             <hr />
             <SidebarRow title='Library' Icon={VideoLibraryIcon} />
-            <SidebarRow title='History' Icon={HistoryIcon} />
-            <SidebarRow title='Your videos' Icon={OndemandVideoIcon} />
-            <SidebarRow title='Watch Later' Icon={WatchLaterIcon} />
-            <SidebarRow title='Liked videos' Icon={ThumbUpAltIcon} />
-            <SidebarRow title='Show more' Icon={ExpandMoreIcon} />
-            <hr />
+            <div className="sidebar__responsive">
+                <SidebarRow title='History' Icon={HistoryIcon} />
+                <SidebarRow title='Your videos' Icon={OndemandVideoIcon} />
+                <SidebarRow title='Watch Later' Icon={WatchLaterIcon} />
+                <SidebarRow title='Liked videos' Icon={ThumbUpAltIcon} />
+                <SidebarRow title='Show more' Icon={ExpandMoreIcon} />
+                <hr />
+            </div>
         </div>
     )
 }
