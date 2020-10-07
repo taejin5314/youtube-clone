@@ -46,7 +46,9 @@ function Header() {
                 :
                 <div className="header">
                     <div className="header__left">
-                        <MenuIcon />
+                        <IconButton className="header__icon" style={{ marginBottom: "6px" }}>
+                            <MenuIcon />
+                        </IconButton>
                         <Link to='/'>
                             <img
                                 className="header__logo"

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 12px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -11,6 +11,7 @@
 
 .header__left {
   display: flex;
+  align-items: center;
 }
 
 .header__logo {
@@ -30,6 +31,8 @@
 
 .header__hiddenInput {
   margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .header__input>input,
@@ -72,6 +75,10 @@
 
 .header__icon.display {
   display: none;
+}
+
+.MuiIconButton-root {
+  padding: 6px !important;
 }
 
 @media screen and (max-width: 655px) {
