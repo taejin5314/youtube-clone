@@ -41,6 +41,26 @@
     font-weight: bold;
 }
 
+.sidebarRow.minimized {
+    flex-direction: column;
+    padding: 15px 0;
+    width: 70px;
+}
+
+.sidebarRow.minimized:hover {
+    background-color: #fff;
+}
+
+.sidebarRow.minimized>.sidebarRow__title {
+    margin: auto;
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+.sidebarRow.minimized.selected {
+    background-color: #fff;
+}
+
 @media screen and (max-width: 1315px) {
     .sidebarRow {
         flex-direction: column;

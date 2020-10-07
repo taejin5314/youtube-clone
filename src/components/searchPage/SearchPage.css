@@ -1,5 +1,5 @@
 .searchPage {
-    flex: 0.84;
+    flex: 1;
     background-color: #f9f9f9;
     padding: 20px 20px;
 }
@@ -27,13 +27,7 @@
     margin-bottom: 16px;
 }
 
-@media screen and (max-width: 1315px) and (min-width: 811px) {
-    .searchPage {
-        flex: 0.93;
-    }
-}
-
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1315px) {
     .searchPage {
         flex: 1;
     }

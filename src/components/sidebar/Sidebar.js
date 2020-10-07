@@ -16,21 +16,31 @@ function Sidebar() {
     const [{ showSidebar }, dispatch] = useStateValue();
 
     return (
-        <div className="sidebar">
-            <SidebarRow title='Home' Icon={HomeIcon} selected />
-            <SidebarRow title='Trending' Icon={WhatshotIcon} />
-            <SidebarRow title='Subscription' Icon={SubscriptionsIcon} />
-            <hr />
-            <SidebarRow title='Library' Icon={VideoLibraryIcon} />
-            <div className="sidebar__responsive">
-                <SidebarRow title='History' Icon={HistoryIcon} />
-                <SidebarRow title='Your videos' Icon={OndemandVideoIcon} />
-                <SidebarRow title='Watch Later' Icon={WatchLaterIcon} />
-                <SidebarRow title='Liked videos' Icon={ThumbUpAltIcon} />
-                <SidebarRow title='Show more' Icon={ExpandMoreIcon} />
-                <hr />
+        <>
+            {showSidebar ? <div>
+                <SidebarRow title='Home' Icon={HomeIcon} minimized selected />
+                <SidebarRow title='Trending' Icon={WhatshotIcon} minimized />
+                <SidebarRow title='Subscription' Icon={SubscriptionsIcon} minimized />
+                <SidebarRow title='Library' Icon={VideoLibraryIcon} minimized />
             </div>
-        </div>
+                :
+                <div className="sidebar">
+                    <SidebarRow title='Home' Icon={HomeIcon} selected />
+                    <SidebarRow title='Trending' Icon={WhatshotIcon} />
+                    <SidebarRow title='Subscription' Icon={SubscriptionsIcon} />
+                    <hr />
+                    <SidebarRow title='Library' Icon={VideoLibraryIcon} />
+                    <div className="sidebar__responsive">
+                        <SidebarRow title='History' Icon={HistoryIcon} />
+                        <SidebarRow title='Your videos' Icon={OndemandVideoIcon} />
+                        <SidebarRow title='Watch Later' Icon={WatchLaterIcon} />
+                        <SidebarRow title='Liked videos' Icon={ThumbUpAltIcon} />
+                        <SidebarRow title='Show more' Icon={ExpandMoreIcon} />
+                        <hr />
+                    </div>
+                </div>
+            }
+        </>
     )
 }
 

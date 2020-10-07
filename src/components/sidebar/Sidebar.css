@@ -1,5 +1,5 @@
 .sidebar {
-    flex: 0.16;
+    width: 230px;
 }
 
 .sidebar hr {
@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 1315px) and (min-width: 811px) {
     .sidebar {
-        flex: 0.07;
+        width: 70px;
     }
 
     .sidebar hr {

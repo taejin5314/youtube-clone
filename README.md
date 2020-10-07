@@ -47,7 +47,17 @@ Below is the screenshot of Search Page.
 
 ![searchpage](https://user-images.githubusercontent.com/21342802/95028920-19927880-0672-11eb-8eda-399a0bbc9f67.png)
 
-## 6. Firebase deploy
+## 6. Sidebar Toggle
+
+When the user clicks the hamburger button, sidebar will be changed. I used reducer for this function. If the hamburger button clicked, the state of showing sidebar will be changed to true to false.
+
+![sidebar1](https://user-images.githubusercontent.com/21342802/95399502-52cb2280-08d6-11eb-9c02-ae505ba3a4b6.png)
+
+It will be changed like
+
+![sidebar2](https://user-images.githubusercontent.com/21342802/95399468-43e47000-08d6-11eb-9f7d-a9edac31c41c.png)
+
+## 7. Firebase deploy
 
 I used firebase to deploy my app.
 
