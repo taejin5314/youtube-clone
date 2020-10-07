@@ -1,5 +1,5 @@
 export const initialState = {
-    showSidebar: true,
+    showSidebar: false,
 }
 
 const reducer = (state, action) => {
