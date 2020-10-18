@@ -4,7 +4,7 @@ This project is clone coding of Youtube by using Youtube API and deployed by usi
 
 ## 1. npx create-react-app
 
-I used `npx create-react-app` to initiate my project.
+I used `npx create-react-app` to initialize my project.
 
 ## 2. Axios
 
